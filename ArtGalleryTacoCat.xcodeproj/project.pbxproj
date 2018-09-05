@@ -12,6 +12,7 @@
 		82932AF721407AD70061AEB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82932AF521407AD70061AEB3 /* Main.storyboard */; };
 		82932AF921407AD70061AEB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82932AF821407AD70061AEB3 /* Assets.xcassets */; };
 		82932AFC21407AD70061AEB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82932AFA21407AD70061AEB3 /* LaunchScreen.storyboard */; };
+		82FE153521407F000036CD35 /* Painting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82FE153421407F000036CD35 /* Painting.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		82932AF821407AD70061AEB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		82932AFB21407AD70061AEB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		82932AFD21407AD70061AEB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82FE153421407F000036CD35 /* Painting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Painting.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,47 @@
 		82932AF021407AD70061AEB3 /* ArtGalleryTacoCat */ = {
 			isa = PBXGroup;
 			children = (
+				82FE153821407F180036CD35 /* Model */,
+				82FE153721407F100036CD35 /* Controller */,
+				82FE153621407F050036CD35 /* View */,
+				82932B0321407C4E0061AEB3 /* Supporting files */,
+			);
+			path = ArtGalleryTacoCat;
+			sourceTree = "<group>";
+		};
+		82932B0321407C4E0061AEB3 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
 				82932AF121407AD70061AEB3 /* AppDelegate.swift */,
-				82932AF321407AD70061AEB3 /* ViewController.swift */,
-				82932AF521407AD70061AEB3 /* Main.storyboard */,
 				82932AF821407AD70061AEB3 /* Assets.xcassets */,
 				82932AFA21407AD70061AEB3 /* LaunchScreen.storyboard */,
 				82932AFD21407AD70061AEB3 /* Info.plist */,
 			);
-			path = ArtGalleryTacoCat;
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		82FE153621407F050036CD35 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				82932AF521407AD70061AEB3 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		82FE153721407F100036CD35 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				82932AF321407AD70061AEB3 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		82FE153821407F180036CD35 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				82FE153421407F000036CD35 /* Painting.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +170,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82FE153521407F000036CD35 /* Painting.swift in Sources */,
 				82932AF421407AD70061AEB3 /* ViewController.swift in Sources */,
 				82932AF221407AD70061AEB3 /* AppDelegate.swift in Sources */,
 			);
@@ -282,7 +318,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KK26JKU2YA;
-				INFOPLIST_FILE = ArtGalleryTacoCat/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ArtGalleryTacoCat/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +336,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KK26JKU2YA;
-				INFOPLIST_FILE = ArtGalleryTacoCat/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ArtGalleryTacoCat/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
