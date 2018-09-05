@@ -13,6 +13,8 @@
 		82932AFC21407AD70061AEB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82932AFA21407AD70061AEB3 /* LaunchScreen.storyboard */; };
 		82FE153521407F000036CD35 /* Painting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82FE153421407F000036CD35 /* Painting.swift */; };
 		82FE153A214081390036CD35 /* PaintingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82FE1539214081390036CD35 /* PaintingController.swift */; };
+		82FE153C2140886D0036CD35 /* PaintingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82FE153B2140886D0036CD35 /* PaintingTableViewCell.swift */; };
+		82FE153E21408A610036CD35 /* PaintingListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82FE153D21408A610036CD35 /* PaintingListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		82932AFD21407AD70061AEB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		82FE153421407F000036CD35 /* Painting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Painting.swift; sourceTree = "<group>"; };
 		82FE1539214081390036CD35 /* PaintingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaintingController.swift; sourceTree = "<group>"; };
+		82FE153B2140886D0036CD35 /* PaintingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaintingTableViewCell.swift; sourceTree = "<group>"; };
+		82FE153D21408A610036CD35 /* PaintingListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaintingListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +60,11 @@
 		82932AF021407AD70061AEB3 /* ArtGalleryTacoCat */ = {
 			isa = PBXGroup;
 			children = (
+				82FE1542214092810036CD35 /* Storyboard */,
 				82FE153821407F180036CD35 /* Model */,
-				82FE153721407F100036CD35 /* Controller */,
+				82FE153721407F100036CD35 /* Model Controller */,
 				82FE153621407F050036CD35 /* View */,
+				82FE1541214092590036CD35 /* View Controller */,
 				82932B0321407C4E0061AEB3 /* Supporting files */,
 			);
 			path = ArtGalleryTacoCat;
@@ -78,17 +84,17 @@
 		82FE153621407F050036CD35 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				82932AF521407AD70061AEB3 /* Main.storyboard */,
+				82FE153B2140886D0036CD35 /* PaintingTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		82FE153721407F100036CD35 /* Controller */ = {
+		82FE153721407F100036CD35 /* Model Controller */ = {
 			isa = PBXGroup;
 			children = (
 				82FE1539214081390036CD35 /* PaintingController.swift */,
 			);
-			path = Controller;
+			path = "Model Controller";
 			sourceTree = "<group>";
 		};
 		82FE153821407F180036CD35 /* Model */ = {
@@ -97,6 +103,22 @@
 				82FE153421407F000036CD35 /* Painting.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		82FE1541214092590036CD35 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				82FE153D21408A610036CD35 /* PaintingListViewController.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		82FE1542214092810036CD35 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				82932AF521407AD70061AEB3 /* Main.storyboard */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,9 +192,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82FE153E21408A610036CD35 /* PaintingListViewController.swift in Sources */,
 				82FE153521407F000036CD35 /* Painting.swift in Sources */,
 				82FE153A214081390036CD35 /* PaintingController.swift in Sources */,
 				82932AF221407AD70061AEB3 /* AppDelegate.swift in Sources */,
+				82FE153C2140886D0036CD35 /* PaintingTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
