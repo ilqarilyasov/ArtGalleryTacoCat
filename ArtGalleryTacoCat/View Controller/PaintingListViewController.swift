@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PaintingListViewController: UIViewController, UITableViewDataSource {
+class PaintingListViewController: UIViewController, UITableViewDataSource, PaintingTableViewCellDelegate {
 
     @IBOutlet weak var tableViewOutlet: UITableView!
     let paintingController = PaintingController()
@@ -28,9 +28,20 @@ class PaintingListViewController: UIViewController, UITableViewDataSource {
         
         let aPainting = paintingController.paintings[indexPath.row]
         unwrappedCell.painting = aPainting
-        
+        unwrappedCell.delegate = self
         
         return unwrappedCell
     }
+    
+    
+    func likeButtonTapped(on cell: PaintingTableViewCell) {
+        guard let indexPath = tableViewOutlet.indexPath(for: PaintingTableViewCell()) else { return }
+        let painting = paintingController.paintings[indexPath.row]
+        paintingController.toggleIsLiked(for: painting)
+        
+        tableViewOutlet.reloadRows(at: [indexPath], with: .fade)
+        
+    }
+    
     
 }
