@@ -18,37 +18,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mii-6e-z9L">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mii-6e-z9L">
                                 <rect key="frame" x="0.0" y="116" width="375" height="551"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ArtCell" rowHeight="329" id="S5o-8F-aB2" customClass="PaintingTableViewCell" customModule="ArtGalleryTacoCat" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="329"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="S5o-8F-aB2" id="WfY-YJ-VzK">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="top" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="S5o-8F-aB2" id="WfY-YJ-VzK">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="328.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kXO-Jm-T5r">
-                                                    <rect key="frame" x="0.0" y="293" width="375" height="30"/>
+                                                    <rect key="frame" x="8" y="293" width="359" height="30"/>
                                                     <state key="normal" title="Button"/>
                                                     <connections>
                                                         <action selector="buttonAction:" destination="S5o-8F-aB2" eventType="touchUpInside" id="Qq2-NS-pSH"/>
                                                     </connections>
                                                 </button>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tno-zV-Sbr">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="285"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="tno-zV-Sbr">
+                                                    <rect key="frame" x="8" y="2" width="359" height="283"/>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="tno-zV-Sbr" firstAttribute="top" secondItem="WfY-YJ-VzK" secondAttribute="top" id="AWZ-Wo-ktH"/>
-                                                <constraint firstAttribute="trailing" secondItem="tno-zV-Sbr" secondAttribute="trailing" id="EoG-k5-9ax"/>
-                                                <constraint firstAttribute="trailing" secondItem="kXO-Jm-T5r" secondAttribute="trailing" id="QpL-8M-6Qg"/>
-                                                <constraint firstAttribute="bottom" secondItem="kXO-Jm-T5r" secondAttribute="bottom" constant="5.5" id="Ulw-1t-DWF"/>
-                                                <constraint firstItem="kXO-Jm-T5r" firstAttribute="leading" secondItem="WfY-YJ-VzK" secondAttribute="leading" id="jxq-Co-QBY"/>
-                                                <constraint firstItem="kXO-Jm-T5r" firstAttribute="top" secondItem="tno-zV-Sbr" secondAttribute="bottom" constant="8" id="sP1-bw-aek"/>
-                                                <constraint firstItem="tno-zV-Sbr" firstAttribute="leading" secondItem="WfY-YJ-VzK" secondAttribute="leading" id="yVk-BL-1VD"/>
+                                                <constraint firstAttribute="trailing" secondItem="tno-zV-Sbr" secondAttribute="trailing" constant="8" id="6FW-68-XhE"/>
+                                                <constraint firstAttribute="trailing" secondItem="kXO-Jm-T5r" secondAttribute="trailing" constant="8" id="8RB-Im-c25"/>
+                                                <constraint firstItem="tno-zV-Sbr" firstAttribute="top" secondItem="WfY-YJ-VzK" secondAttribute="top" constant="2" id="FRC-Hb-C2v"/>
+                                                <constraint firstItem="kXO-Jm-T5r" firstAttribute="leading" secondItem="WfY-YJ-VzK" secondAttribute="leading" constant="8" id="Ne9-ES-6iX"/>
+                                                <constraint firstAttribute="bottom" secondItem="kXO-Jm-T5r" secondAttribute="bottom" constant="5.5" id="eAo-8N-hqI"/>
+                                                <constraint firstItem="tno-zV-Sbr" firstAttribute="leading" secondItem="WfY-YJ-VzK" secondAttribute="leading" constant="8" id="ja8-bD-UQJ"/>
+                                                <constraint firstItem="kXO-Jm-T5r" firstAttribute="top" secondItem="tno-zV-Sbr" secondAttribute="bottom" constant="8" id="kdX-kJ-QKR"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -64,6 +63,12 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="mii-6e-z9L" firstAttribute="leading" secondItem="UqP-iD-f9U" secondAttribute="leading" id="11u-cR-Klo"/>
+                            <constraint firstItem="mii-6e-z9L" firstAttribute="top" secondItem="UqP-iD-f9U" secondAttribute="top" id="Ncd-5s-7dz"/>
+                            <constraint firstItem="mii-6e-z9L" firstAttribute="trailing" secondItem="UqP-iD-f9U" secondAttribute="trailing" id="cco-4T-0gU"/>
+                            <constraint firstItem="mii-6e-z9L" firstAttribute="bottom" secondItem="UqP-iD-f9U" secondAttribute="bottom" id="eAF-n2-aPM"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="UqP-iD-f9U"/>
                     </view>
                     <navigationItem key="navigationItem" title="Art Gallery" id="v1A-oJ-UDr"/>

@@ -12,6 +12,10 @@ import UIKit
 class PaintingController {
     private(set) var paintings: [Painting] = []
     
+//    init(){
+//        self.loadPaintingsFromAssets()
+//    }
+    
     func loadPaintingsFromAssets() {
         
         for i in 1...12 {
