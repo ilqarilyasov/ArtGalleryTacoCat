@@ -31,7 +31,7 @@ class PaintingTableViewCell: UITableViewCell {
         guard let unwrappedPainting = painting else { return }
         imageViewOutlet.image = unwrappedPainting.image
         
-        buttonOutlet.titleLabel?.text = unwrappedPainting.isLiked ? "Liked" : "Unliked"
+        let text = unwrappedPainting.isLiked ? "Liked" : "Unliked"
+        buttonOutlet.setTitle(text, for: .normal)
     }
-    
 }

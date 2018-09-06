@@ -15,6 +15,8 @@ class PaintingListViewController: UIViewController, UITableViewDataSource, Paint
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        paintingController.loadPaintingsFromAssets()
+        self.tableViewOutlet.rowHeight = 300
         tableViewOutlet.dataSource = self
     }
     
@@ -35,11 +37,11 @@ class PaintingListViewController: UIViewController, UITableViewDataSource, Paint
     
     
     func likeButtonTapped(on cell: PaintingTableViewCell) {
-        guard let indexPath = tableViewOutlet.indexPath(for: PaintingTableViewCell()) else { return }
+        guard let indexPath = tableViewOutlet.indexPath(for: cell) else { return }
         let painting = paintingController.paintings[indexPath.row]
         paintingController.toggleIsLiked(for: painting)
         
-        tableViewOutlet.reloadRows(at: [indexPath], with: .fade)
+        tableViewOutlet.reloadRows(at: [indexPath], with: .automatic)
         
     }
     
